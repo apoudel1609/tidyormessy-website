@@ -12,16 +12,41 @@
 		6E0FF7E22C27D59400C991A5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0FF7E12C27D59400C991A5 /* Item.swift */; };
 		6E0FF7E42C27D59600C991A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E0FF7E32C27D59600C991A5 /* Assets.xcassets */; };
 		6E0FF7E82C27D59600C991A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E0FF7E72C27D59600C991A5 /* Preview Assets.xcassets */; };
+		6E0FF7F12C27D6C300C991A5 /* RoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0FF7F02C27D6C300C991A5 /* RoomViewModel.swift */; };
+		6E0FF7F42C27D7A500C991A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0FF7F32C27D7A500C991A5 /* UIKit.framework */; platformFilter = ios; };
+		6E0FF8042C28C07F00C991A5 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0FF8032C28C07F00C991A5 /* ImagePicker.swift */; };
+		6E0FF82C2C2CC4E200C991A5 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0FF82B2C2CC4E200C991A5 /* QuoteView.swift */; };
+		6ED8CBE12C2DABB1008EBB37 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED8CBE02C2DABB1008EBB37 /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		6E0FF7FA2C27E78200C991A5 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = text.plist.stringsdict;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# builtin-copyStrings\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXFileReference section */
-		6E0FF7DA2C27D59400C991A5 /* Room.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Room.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E0FF7DA2C27D59400C991A5 /* TidyorMessy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TidyorMessy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E0FF7DD2C27D59400C991A5 /* RoomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomApp.swift; sourceTree = "<group>"; };
 		6E0FF7DF2C27D59400C991A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6E0FF7E12C27D59400C991A5 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		6E0FF7E32C27D59600C991A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E0FF7E52C27D59600C991A5 /* Room.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Room.entitlements; sourceTree = "<group>"; };
 		6E0FF7E72C27D59600C991A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6E0FF7F02C27D6C300C991A5 /* RoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewModel.swift; sourceTree = "<group>"; };
+		6E0FF7F32C27D7A500C991A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		6E0FF7FF2C27EA6D00C991A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E0FF8032C28C07F00C991A5 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		6E0FF82B2C2CC4E200C991A5 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		6ED8CBE02C2DABB1008EBB37 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E0FF7F42C27D7A500C991A5 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,13 +66,14 @@
 			children = (
 				6E0FF7DC2C27D59400C991A5 /* Room */,
 				6E0FF7DB2C27D59400C991A5 /* Products */,
+				6E0FF7F22C27D7A500C991A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		6E0FF7DB2C27D59400C991A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6E0FF7DA2C27D59400C991A5 /* Room.app */,
+				6E0FF7DA2C27D59400C991A5 /* TidyorMessy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,12 +81,17 @@
 		6E0FF7DC2C27D59400C991A5 /* Room */ = {
 			isa = PBXGroup;
 			children = (
+				6ED8CBE02C2DABB1008EBB37 /* CameraView.swift */,
+				6E0FF8032C28C07F00C991A5 /* ImagePicker.swift */,
+				6E0FF7F02C27D6C300C991A5 /* RoomViewModel.swift */,
 				6E0FF7DD2C27D59400C991A5 /* RoomApp.swift */,
 				6E0FF7DF2C27D59400C991A5 /* ContentView.swift */,
 				6E0FF7E12C27D59400C991A5 /* Item.swift */,
 				6E0FF7E32C27D59600C991A5 /* Assets.xcassets */,
 				6E0FF7E52C27D59600C991A5 /* Room.entitlements */,
 				6E0FF7E62C27D59600C991A5 /* Preview Content */,
+				6E0FF7FF2C27EA6D00C991A5 /* Info.plist */,
+				6E0FF82B2C2CC4E200C991A5 /* QuoteView.swift */,
 			);
 			path = Room;
 			sourceTree = "<group>";
@@ -72,24 +104,33 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6E0FF7F22C27D7A500C991A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E0FF7F32C27D7A500C991A5 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6E0FF7D92C27D59400C991A5 /* Room */ = {
+		6E0FF7D92C27D59400C991A5 /* TidyorMessy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E0FF7EB2C27D59600C991A5 /* Build configuration list for PBXNativeTarget "Room" */;
+			buildConfigurationList = 6E0FF7EB2C27D59600C991A5 /* Build configuration list for PBXNativeTarget "TidyorMessy" */;
 			buildPhases = (
 				6E0FF7D62C27D59400C991A5 /* Sources */,
 				6E0FF7D72C27D59400C991A5 /* Frameworks */,
 				6E0FF7D82C27D59400C991A5 /* Resources */,
 			);
 			buildRules = (
+				6E0FF7FA2C27E78200C991A5 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
-			name = Room;
+			name = TidyorMessy;
 			productName = Room;
-			productReference = 6E0FF7DA2C27D59400C991A5 /* Room.app */;
+			productReference = 6E0FF7DA2C27D59400C991A5 /* TidyorMessy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -120,7 +161,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6E0FF7D92C27D59400C991A5 /* Room */,
+				6E0FF7D92C27D59400C991A5 /* TidyorMessy */,
 			);
 		};
 /* End PBXProject section */
@@ -143,8 +184,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E0FF7E02C27D59400C991A5 /* ContentView.swift in Sources */,
+				6ED8CBE12C2DABB1008EBB37 /* CameraView.swift in Sources */,
+				6E0FF82C2C2CC4E200C991A5 /* QuoteView.swift in Sources */,
 				6E0FF7E22C27D59400C991A5 /* Item.swift in Sources */,
+				6E0FF8042C28C07F00C991A5 /* ImagePicker.swift in Sources */,
 				6E0FF7DE2C27D59400C991A5 /* RoomApp.swift in Sources */,
+				6E0FF7F12C27D6C300C991A5 /* RoomViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +248,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -258,7 +305,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -269,8 +318,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=iphoneos*]" = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Room/Room.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Room/Preview Content\"";
@@ -278,16 +330,23 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "$(SRCROOT)/Room/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = TidyorMessy;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -295,11 +354,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = roomanup.Room;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +369,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Room/Room.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Room/Preview Content\"";
@@ -316,16 +379,23 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "$(SRCROOT)/Room/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = TidyorMessy;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -333,11 +403,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = roomanup.Room;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -353,7 +425,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E0FF7EB2C27D59600C991A5 /* Build configuration list for PBXNativeTarget "Room" */ = {
+		6E0FF7EB2C27D59600C991A5 /* Build configuration list for PBXNativeTarget "TidyorMessy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E0FF7EC2C27D59600C991A5 /* Debug */,
